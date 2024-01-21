@@ -2,7 +2,7 @@
 .container {
   max-width: 50%;
   margin: 0 auto;
-  background: url("./todo.jpg");
+  background-color:light-pink;
   /* background credits to unsplash images */
   background-repeat: no-repeat;
   background-size: 100% 100%;
