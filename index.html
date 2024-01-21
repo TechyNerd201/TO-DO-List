@@ -1,28 +1,26 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App with Local Storage</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="container">
+      <h1>Todo App with Local Storage</h1>
 
-    <div class="header">
-      <h2 style="margin:5px">To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title...">
-      <span onclick="newElement()" class="addBtn">Add</span>
+      <form class="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a Todo..." />
+        <button type="submit" onclick="addTodo()" id="addButton">Add</button>
+      </form>
+
+      <ul id="todo-list">
+        <p id="list"></p>
+      </ul>
     </div>
-
-    <ul id="myUL">
-      <li class="checked">Go through DataFlair's JavaScript tutorials</li>
-      <li>Practise the codes</li>
-      <li>Read a book on JavaScript</li>
-      <li class="checked">Organise my notes</li>
-      <li>Create JavaScript projects</li>
-      <li>Take quiz</li>
-      <li>Comprehend interview questions</li>
-    </ul>
-    <button type="button" id="clear-list" onclick="removeAll()">Clear Items</button>
-
-    <script type="text/javascript" src="./script.js"></script>
-
+    <script src="./script.js"></script>
   </body>
 </html>
